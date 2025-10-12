@@ -1,0 +1,5 @@
+load STM32F407VGTx
+project name STM32CubeMX
+project toolchain "MDK-ARM V5"
+project path "E:\ws\uVision5\test1\STM32CubeMX\Target_1\STM32CubeMX\MDK-ARM\STM32CubeMX\STM32CubeMX"
+SetCopyLibrary "copy only"

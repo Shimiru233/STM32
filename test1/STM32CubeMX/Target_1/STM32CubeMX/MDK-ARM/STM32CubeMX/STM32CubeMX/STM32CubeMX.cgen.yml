@@ -1,0 +1,35 @@
+generator-import:
+  for-device: STM32F407VGTx
+  define:
+    - USE_HAL_DRIVER
+    - STM32F407xx
+  add-path:
+    - ./Drivers/STM32F4xx_HAL_Driver/Inc
+    - ./Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
+    - ./Drivers/CMSIS/Device/ST/STM32F4xx/Include
+    - ./Drivers/CMSIS/Include
+    - ./Inc
+    - ./MX_Device
+  groups:
+    - group: CubeMX
+      files:
+        - file: ./Src/main.c
+        - file: ./Src/stm32f4xx_it.c
+        - file: ./Src/stm32f4xx_hal_msp.c
+        - file: ./MDK-ARM/startup_stm32f407xx.s
+        - file: ./Src/system_stm32f4xx.c
+    - group: STM32 HAL Driver
+      files:
+        - file: ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+        - file: ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+        - file: ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+        - file: ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+        - file: ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+        - file: ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+        - file: ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+        - file: ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+        - file: ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+        - file: ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+        - file: ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+        - file: ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+        - file: ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
