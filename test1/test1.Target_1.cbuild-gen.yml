@@ -12,5 +12,5 @@ build-gen:
   components: 
   apis: 
   groups:
-    - group: Source Group 1
+    - group: Start
       files: 

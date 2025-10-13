@@ -10,6 +10,8 @@
       <TargetName>Target_1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pArmCC>6240000::V6.24::ARMCLANG</pArmCC>
+      <pCCUsed>6240000::V6.24::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -259,17 +261,17 @@
                 <Size>0x0</Size>
               </XRAM>
               <OCR_RVCT1>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT1>
               <OCR_RVCT2>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT2>
               <OCR_RVCT3>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT3>
@@ -279,7 +281,7 @@
                 <Size>0x100000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT5>
@@ -337,9 +339,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>.\Start;.\User</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -381,7 +383,39 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source Group 1</GroupName>
+          <GroupName>Start</GroupName>
+          <Files>
+            <File>
+              <FileName>startup_stm32f40xx.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Start\startup_stm32f40xx.s</FilePath>
+            </File>
+            <File>
+              <FileName>core_cm4.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Start\core_cm4.h</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32f4xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Start\system_stm32f4xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32f4xx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Start\system_stm32f4xx.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>User</GroupName>
+          <Files>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\User\main.c</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>

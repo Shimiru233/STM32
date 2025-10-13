@@ -381,15 +381,141 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source Group 1</GroupName>
+          <GroupName>Start</GroupName>
+        </Group>
+        <Group>
+          <GroupName>:CubeMX:CubeMX</GroupName>
+          <Files>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Src\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Src\stm32f4xx_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_msp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Src\stm32f4xx_hal_msp.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup_stm32f407xx.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\MDK-ARM\startup_stm32f407xx.s</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32f4xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Src\system_stm32f4xx.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>:CubeMX:STM32 HAL Driver</GroupName>
+          <Files>
+            <File>
+              <FileName>stm32f4xx_hal_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_rcc_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_flash_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_flash_ramfunc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_dma_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_pwr_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_cortex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\STM32CubeMX\Target_1\STM32CubeMX\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>::CMSIS</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::Device</GroupName>
         </Group>
       </Groups>
     </Target>
   </Targets>
 
   <RTE>
+    <gpdscs>
+      <gpdsc generator="CubeMX" name="STM32CubeMX/Target_1/test1.cgen.yml">
+        <targetInfos>
+          <targetInfo name="Target_1"/>
+        </targetInfos>
+      </gpdsc>
+    </gpdscs>
     <apis/>
-    <components/>
+    <components>
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="6.1.1" condition="ARMv6_7_8-M Device" ymlID="CMSIS:CORE">
+        <package name="CMSIS" schemaVersion="1.7.40" url="https://www.keil.com/pack/" vendor="ARM" version="6.2.0"/>
+        <targetInfos>
+          <targetInfo name="Target_1"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="CubeMX" Cvendor="Keil" Cversion="1.0.0" condition="STM32F4 CMSIS" generator="CubeMX" ymlID="Device:CubeMX">
+        <package name="STM32F4xx_DFP" schemaVersion="1.7.36" url="https://www.keil.com/pack/" vendor="Keil" version="3.1.1"/>
+        <targetInfos>
+          <targetInfo name="Target_1"/>
+        </targetInfos>
+      </component>
+    </components>
     <files/>
   </RTE>
 
